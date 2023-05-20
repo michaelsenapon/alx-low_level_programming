@@ -20,7 +20,10 @@
 	* The C file name is saved in the variable `$CFILE`
 
 ### 4-puts.c
-	A C program that prints a string using 'puts' function
+	A C program that prints a string using `puts` function
 
-### 
+### 5-printf.c
+	A C program that prints a string using `printf` function.
+
+###
 
