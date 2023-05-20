@@ -31,4 +31,5 @@
 ### 100-intel
 	A script that generates the assembly code (Intel syntax) of a C code.
 
-###
+### 101-quote.c
+	A C program that prints a string to the standard error (STD_ERR) without using any of printf or puts
