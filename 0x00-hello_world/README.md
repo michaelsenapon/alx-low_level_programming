@@ -15,4 +15,6 @@
 	* The C file name is saved in the variable $CFILE
 	* The output name is same as the C file, but with the extension .s
 
-###
+### 3. Name
+	A script that compiles a C file and name it `cisfun`
+	* The C file name is saved in the variable `$CFILE`
