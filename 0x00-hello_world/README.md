@@ -25,5 +25,6 @@
 ### 5-printf.c
 	A C program that prints a string using `printf` function.
 
-###
+### 6-size.c
+	A C program that prints the size of various types on the computer it is compiled on
 
