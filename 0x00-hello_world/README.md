@@ -9,3 +9,10 @@
 	Write a script that compiles a C file but does not link.
 	* The C file name is saved in the variable `$CFILE`
 	* The output file is named the same as the C file, but with the extension .o
+
+### 2. Assembler
+	A script that generates the assembly code of a C code and save it in an output file.
+	* The C file name is saved in the variable $CFILE
+	* The output name is same as the C file, but with the extension .s
+
+###
