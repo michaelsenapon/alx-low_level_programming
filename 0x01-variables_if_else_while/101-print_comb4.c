@@ -25,7 +25,7 @@ int main(void)
 				putchar(digit_a);
 				putchar(digit_b);
 				putchar(digit_c);
-				
+
 				if (digit_a != 55)
 				{
 					putchar(',');
@@ -39,4 +39,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}	
+}
