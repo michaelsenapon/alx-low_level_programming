@@ -10,16 +10,16 @@ void jack_bauer(void)
 	int S1;
 	int S2;
 
-	for(; H1 <= 2; H1++)
+	for (; H1 <= 2; H1++)
 	{
 		H2 = 0;
-		for(; H2 <= 9; H2++)
+		for (; H2 <= 9; H2++)
 		{
 			S1 = 0;
-			for(; S1 <= 5; S1++)
+			for (; S1 <= 5; S1++)
 			{
 				S2 = 0;
-				for(; S2 <= 9; S2++)
+				for (; S2 <= 9; S2++)
 				{
 					if ((H1 == 2 && H2 == 3) && (S1 == 5 && S2 == 9))
 					{
