@@ -1,48 +1,46 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int digit_a = 48;
-	int digit_b;
-	int digit_c;
-	int digit_d;
+	int c, i, k, j;
 
-	for (; digit_a <= 57; digit_a++)
+	for (c = 48; c <= 57; c++)
 	{
-		digit_b = 48;
-		digit_c = digit_a;
-		digit_d = 49;
-		for (; digit_b <= 56; digit_b++)
+		for (i = 48; i <= 57; i++)
 		{
-			digit_c = digit_a;
-			digit_d = digit_b + 1;
-			for (; digit_c <= 57; digit_c++)
+			for (k = 48; k <= 57; k++)
 			{
-				if (digit_a == digit_c)
-					digit_d = (digit_b + 1);
-				else
-					digit_d = 48;
-				for (; digit_d <= 57; digit_d++)
+				for (j = 48; j <= 57; j++)
 				{
-					putchar(digit_a);
-					putchar(digit_b);
-					putchar(' ');
-					putchar(digit_c);
-					putchar(digit_d);
-					if (!(digit_a == 57 && digit_b == 56))
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
 					{
-						putchar(',');
+						putchar(c);
+						putchar(i);
 						putchar(' ');
+						putchar(k);
+						putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
 					}
 				}
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
