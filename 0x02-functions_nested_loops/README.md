@@ -1,7 +1,7 @@
 # C Projects on Functions, nested loops
 
 ### `0-putchar.c`
-Prints `putchar`, to the output
+Prints `_putchar`, to the output
 
 ### `1-alphabet.c`
 Print the alphabet in lowercase
