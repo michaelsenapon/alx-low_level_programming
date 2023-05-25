@@ -15,6 +15,7 @@ void print_times_table(int n)
 	else if (n == 0)
 	{
 		_putchar(0 + '0');
+		_putchar('\n');
 	}
 	else
 	{
@@ -78,7 +79,7 @@ int hundreds(int n)
 /**
  * _print - Print number
  * @n: number to be printed
- * @m: parameter used to allocate separators around single digit 
+ * @m: parameter used to allocate separators around single digit
  */
 void _print(int n, int m)
 {
