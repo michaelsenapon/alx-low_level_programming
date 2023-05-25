@@ -2,6 +2,17 @@
 #include "main.h"
 
 /**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
+
+/**
  * fizz_buzz - Function that prints numbers from 1 to 100 as follows
  * replace every multiples of 3 with the string "Fizz"
  * replace every multiples of 5 with the string "Buzz"
