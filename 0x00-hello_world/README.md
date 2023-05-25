@@ -8,12 +8,12 @@ Runs a C file through the preprocessor and save the result into another file
 ### 1-compiler
 Write a script that compiles a C file but does not link.
 - The C file name is saved in the variable `$CFILE`
-- The output file is named the same as the C file, but with the extension .o
+- The output file is named the same as the C file, but with the extension `.o`
 
 ### 2-assembler
 A script that generates the assembly code of a C code and save it in an output file.
-- The C file name is saved in the variable $CFILE
-- The output name is same as the C file, but with the extension .s
+- The C file name is saved in the variable `$CFILE`
+- The output name is same as the C file, but with the extension `.s`
 
 ### 3-name
 A script that compiles a C file and name it `cisfun`
