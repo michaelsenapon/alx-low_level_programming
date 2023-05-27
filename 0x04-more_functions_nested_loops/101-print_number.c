@@ -14,9 +14,9 @@ void print_number(int n)
 		_putchar('-');
 
 	i = _abs(n);
-
 	div = 1;
 
+	/* Loop to get the highest divisor needed */
 	while ((i / (div * 10) != 0))
 		div *= 10;
 
@@ -34,7 +34,7 @@ void print_number(int n)
 			_putchar((i / div) + '0');
 			i %= div;
 			div /= 10;
-			if (div > i)
+			while (div > i)
 			{
 				_putchar('0');
 				div /= 10;
