@@ -8,49 +8,36 @@
  */
 void print_number(int n)
 {
-	int i, div;
+	int div = 1;
 
 	if (n < 0)
+	{
 		_putchar('-');
-
-	i = _abs(n);
-	div = 1;
-
+		n = (n * -1);
+	}
 	/* Loop to get the highest divisor needed */
-	while ((i / (div * 10) != 0))
+	while ((n / (div * 10) != 0))
 		div *= 10;
 
 	for (;;)
 	{
 		if (div == 0)
 			return;
-		if ((i < 10) && (div == 1))
+		if ((n < 10) && (div == 1))
 		{
-			_putchar(i + '0');
+			_putchar(n + '0');
 			return;
 		}
 		else
 		{
-			_putchar((i / div) + '0');
-			i %= div;
+			_putchar((n / div) + '0');
+			n %= div;
 			div /= 10;
-			while (div > i)
+			while (div > n)
 			{
 				_putchar('0');
 				div /= 10;
 			}
 		}
 	}
-}
-/**
- * _abs - Compute the absolute value of number
- * @c: number to compute absolute value on
- *
- * Return: The absolute value
- */
-int _abs(int c)
-{
-	if (c < 0)
-		return (c * -1);
-	return (c);
 }
