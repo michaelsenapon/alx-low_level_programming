@@ -15,7 +15,11 @@ void print_number(int n)
 		_putchar('-');
 		n = (n * -1);
 	}
-	/* Loop to get the highest divisor needed */
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 	while ((n / (div * 10) != 0))
 		div *= 10;
 
