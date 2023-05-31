@@ -6,7 +6,7 @@
  * @a: Pointer to integer variable
  * @n: Number of integers
  */
-void print_array (int *a, int n)
+void print_array(int *a, int n)
 {
 	int i = 0;
 
