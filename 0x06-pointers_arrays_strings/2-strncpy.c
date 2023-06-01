@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - Copies n number of bytes into another string
- * doesn't copy bytes that appear after Null bytes 
+ * doesn't copy bytes that appear after Null byte
  * @dest: Pointer to the String to be copied to
  * @src: Pointer to the string to be copied from
  * @n: Number of bytes to copy
