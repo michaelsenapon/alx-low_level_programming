@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings taking n number of characters from src string
+ * _strncat - Cat two strings taking n number of characters from src string
  * @dest: Destination string
  * @src: Source string
  * @n: Number of characters to be copied
