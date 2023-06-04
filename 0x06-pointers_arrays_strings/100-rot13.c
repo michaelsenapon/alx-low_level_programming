@@ -10,18 +10,19 @@ char *rot13(char *s)
 {
 	int j, i = 0;
 	char string[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char code[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char code[] =   "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (s[i])
 	{
-		for (j = 0; string[j] != '\0'; j++)
+		j = 0;
+		while (string[j])
 		{
 			if (s[i] == string[j])
 			{
 				s[i] = code[j];
-				i++;
-				break;
+				break
 			}
+			j++;
 		}
 		i++;
 	}
