@@ -9,17 +9,16 @@
 char *leet(char *s)
 {
 	int j, i = 0;
-	char leet[] = "aAeEoOtTlL";
-	char code[] = "4433007711";
+	char leet[] = "AEOTL";
+	char code[] = "43071";
 
 	while (s[i])
 	{
-		for (j = 0; leet[j] != '\0'; j++)
+		for (j = 0; j < 5; j++)
 		{
-			if (s[i] == leet[j])
+			if (s[i] == leet[j] || s[i] == leet[j] + 32)
 			{
 				s[i] = code[j];
-				i++;
 			}
 		}
 		i++;
