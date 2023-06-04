@@ -9,6 +9,8 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 int small_alpha(char);
+char *leet(char *);
+char *rot13(char *);
 
 
 #endif /* MAIN_H */
