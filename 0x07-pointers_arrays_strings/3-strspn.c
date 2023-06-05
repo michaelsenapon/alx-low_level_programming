@@ -2,7 +2,7 @@
 
 /**
  * _strspn - Function that gets the length of a prefix substring
- * @s: String from which the length is gotten
+ * @s: String from which the length is obtained
  * @accept: Substring of the main string
  *
  * Return: The length of the prefix substring
