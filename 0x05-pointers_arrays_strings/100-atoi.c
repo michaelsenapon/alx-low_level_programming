@@ -1,75 +1,30 @@
 #include "main.h"
 
-
 /**
- * _atoi - Convert a string to an integer
- * @s: String to be converted
+ * _atoi - convert a string to an integer.
+ * @s: the string to be comverted.
  *
- * Return: An integer
+ *Return: The integer value of the comverted string.
  */
+
 int _atoi(char *s)
 {
-	int index;
-	unsigned int number = 0;
-	int i = 1;
 
-	index = last_digit_index(s);
+	int sign = 1;
+	unsigned int num = 0;
 
-	if (index == -1)
-	{
-		return (0);
-	}
-	else
-	{
-		while (index >= 0)
-		{
-			if (s[index] == 45)
-			{
-				number *= -1;
-			}
-			else if (s[index] < 48 || s[index] > 57) /* if char  */
-			{
-				index--;
-				continue;
-			}
-			else
-			{
-				number += (s[index] - '0') * i;
-				i *= 10;
-			}
-			index--;
-		}
-		return (number);
-	}
-}
+	do {
 
-/**
- * last_digit_index - Compute the index of the last digit found in a string
- * @s: String to be searched
- *
- * Return: The index of the last digit or -1 if no digit is found
- */
-int last_digit_index(char *s)
-{
-	int strlen = 0;
-	int index = -1;
+		if (*s == '-')
+			sign *= -1;
 
-	while (s[strlen])
-	{
-		if (s[strlen] < 48 || s[strlen] > 57) /* if value is char  */
-		{
-			strlen++;
-			continue;
-		}
-		else
-		{
-			while (s[strlen] > 47 && s[strlen] < 58)
-			{
-				index = strlen;
-				strlen++;
-			}
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+
+		else if (num > 0)
 			break;
-		}
-	}
-	return (index);
+
+	} while (*s++);
+
+	return (num * sign);
 }
