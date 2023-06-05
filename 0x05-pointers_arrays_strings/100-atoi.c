@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int index;
-	int number = 0;
+	unsigned int number = 0;
 	int i = 1;
 
 	index = last_digit_index(s);
