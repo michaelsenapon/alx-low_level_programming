@@ -7,7 +7,7 @@
  *
  * Pointer to the beggining of the located substring
  */
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *s, char *accept)
 {
 	int i, j;
 	char *p;
@@ -25,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 			j++;
 		}
-		i+++
+		i++;
 	}
 	return (0);
 }
