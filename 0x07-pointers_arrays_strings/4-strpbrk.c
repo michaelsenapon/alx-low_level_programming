@@ -7,7 +7,7 @@
  *
  * Pointer to the beggining of the located substring
  */
-char *_strstr(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 	char *p;
