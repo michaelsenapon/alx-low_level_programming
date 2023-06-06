@@ -5,7 +5,7 @@
  * @s: String to be searched
  * @accept: String that contains a substring
  *
- * Pointer to the beggining of the located substring
+ * Return: Pointer to the beggining of the located substring
  */
 char *_strpbrk(char *s, char *accept)
 {
