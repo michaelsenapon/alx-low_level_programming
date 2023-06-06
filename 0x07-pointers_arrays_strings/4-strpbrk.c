@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strstr - Function that locates a substring
- * @haystack: String to be searched
- * @needle: String that contains a substring
+ * _strpbrk - Function that locates a substring
+ * @s: String to be searched
+ * @accept: String that contains a substring
  *
  * Pointer to the beggining of the located substring
  */
