@@ -18,7 +18,7 @@ int is_prime_number(int n)
 /**
  * test_prime - Recursive function that test for prime
  * @n: Number to test
- * @m, divisors
+ * @m: divisors
  *
  * Return: 2 if n is prime number
  * -1 if n is not a prime number
