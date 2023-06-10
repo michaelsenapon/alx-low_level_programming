@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 }
 
 /**
- * _atoi2 - Function
+ * _atoi2 - Function that convert strings to integer
  * @s: String to convert
  *
  * Return: the int result or -1 if non digit character is found
