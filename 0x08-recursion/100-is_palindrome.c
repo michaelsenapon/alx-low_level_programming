@@ -9,7 +9,6 @@
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
-
 	return (test_palindrome(s, len, len / 2));
 }
 
@@ -39,8 +38,6 @@ int test_palindrome(char *s, int len, int n)
 	if (n == 0)
 		return (1);
 	if (*s != s[len - 1])
-	{
 		return (0);
-	}
 	return (1 * test_palindrome(s + 1, len - 2, n - 1));
 }
