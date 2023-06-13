@@ -10,7 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, len_s1, len_s2;
+	int i, j, len_s1 = 0, len_s2 = 0;
 	char *buffer;
 
 	/* Find the length of string s1 & s2 */
