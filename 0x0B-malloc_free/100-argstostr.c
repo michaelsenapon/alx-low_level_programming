@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 	len_sum = len + ac;
 
 	/* Allocate enough memory and store all strings passed to program */
-	str = malloc(sizeof(char) * len_sum);
+	str = malloc(sizeof(char) * len_sum + 1);
 	if (str == NULL)
 		return (NULL);
 
@@ -40,5 +40,6 @@ char *argstostr(int ac, char **av)
 		str[k] = '\n';
 		k++;
 	}
+	str[k] = '\0';
 	return (str);
 }
