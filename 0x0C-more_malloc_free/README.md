@@ -1,8 +1,8 @@
-# 0X0C. C - More malloc, free
-#### Projects that adopt malloc, calloc and realloc in functions
+# 0x0C. C - More malloc, free
+### Projects on malloc, calloc, realloc, free, exit
 
-### 0-malloc_checked.c
-Function allocates memory using `malloci`
+#### 0-malloc_checked.c
+Function that allocate memory using malloc
 
-### 1-
+####
 
