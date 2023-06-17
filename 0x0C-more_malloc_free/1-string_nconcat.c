@@ -22,7 +22,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* Copy s1  and s2 strings into the newly allocated memory */
 	if (str == NULL)
+	{
+		free(str);
 		return (NULL);
+	}
 	for (i = 0; i < len_s1; i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++)
