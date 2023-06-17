@@ -18,14 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len_s1  = _strlen(s1);
 
 	/* Allocate memory on the heap */
-	str = malloc(sizeof(char) * (len_s1 + n + 1));
+	str = malloc(sizeof(char) * (len_s1 + n));
 
 	/* Copy s1  and s2 strings into the newly allocated memory */
 	if (str == NULL)
-	{
-		free(str);
 		return (NULL);
-	}
 	for (i = 0; i < len_s1; i++)
 		str[i] = s1[i];
 	for (j = 0; j < n; j++)
