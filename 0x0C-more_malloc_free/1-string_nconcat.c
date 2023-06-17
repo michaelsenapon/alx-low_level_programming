@@ -11,17 +11,14 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-
-	unsigned int i, j, len_s1, len_s2;
+	unsigned int i, j, len_s1;
 	char *str;
 
-	/* Get length of s1 and s2 */
+	/* Get length of s1 */
 	len_s1  = _strlen(s1);
-	len_s2 = _strlen(s2);
 
 	/* Allocate memory on the heap */
-	str = malloc(sizeof(char) * (len_s1 + len_s2 + 1));
-
+	str = malloc(sizeof(char) * (len_s1 + n + 1));
 
 	/* Copy s1  and s2 strings into the newly allocated memory */
 	if (str == NULL)
@@ -51,7 +48,7 @@ unsigned int _strlen(char *str)
 
 	if (str != NULL)
 	{
-		for (len = 0; str[len]; len++)
+		for (; str[len]; len++)
 			;
 	}
 	return (len);
