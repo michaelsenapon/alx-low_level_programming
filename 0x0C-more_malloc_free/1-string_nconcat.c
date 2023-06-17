@@ -25,9 +25,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; i < len_s1; i++)
+	{
+		if (s1 == NULL)
+			break;
 		str[i] = s1[i];
+	}
 	for (j = 0; j < n; j++)
 	{
+		if (s2 == NULL)
+			 break;
 		if (s2[j] == '\0')
 			break;
 		str[i] = s2[j];
