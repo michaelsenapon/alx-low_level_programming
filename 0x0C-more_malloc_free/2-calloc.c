@@ -10,16 +10,21 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	unsigned int i, mul;
+	char *ptr;
 
-	/* Allocate memory using malloc */
-	ptr = malloc(nmemb * size);
-	
-	if (ptr == NULL)
-		return (NULL);
+	mul = nmemb * size;
 
 	/* Check if nmemb OR size is 0 or malloc fails */
-	if (nmemb == 0 || size == 0)
+	if (mul == 0)
 		return (NULL);
+
+	/* Allocate memory using malloc */
+	ptr = malloc(mul);
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; i < mul; i++)
+		*(ptr + i) = 0;
+
 	return (ptr);
 }
