@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 	int *ptr;
 
 	/* Check if numbers are accurately passed then allocate */
-	if (max > min)
+	if (max >= min)
 	{
 		nmemb = (max - min) + 1;
 		ptr = malloc(sizeof(int) * nmemb);
