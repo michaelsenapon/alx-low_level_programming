@@ -20,15 +20,8 @@ void print_all(const char * const format, ...)
 	i = 0, n = 0;
 	while (format && format[i] != '\0')
 	{
-		j = 0;
-		while (t_arg[j])
-		{
-			if (format[i] == t_arg[j] && n)
-			{
-				printf(", ");
-				break;
-			} j++;
-		}
+		print_separator(format[i], n);
+
 		switch (format[i])
 		{
 		case 'c':
@@ -55,3 +48,24 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(list);
 }
+/**
+ * print_separator - Function print separator
+ * @c: Character to observe
+ * @n: Number to observe
+ */
+void print_separator(char c, int n)
+{
+	int j = 0;
+	char id[] = "cifs";
+
+	while (id[j])
+	{
+		if (c == id[j] && n)
+		{
+			printf(", ");
+			break;
+		}
+		j++;
+	}
+}
+
