@@ -27,7 +27,7 @@ int main(int ac, char *argv[])
 
 	ptr = get_op_func(argv[2]);
 
-	if (ptr == NULL)
+	if (!ptr)
 	{
 		printf("Error\n");
 		exit(99);
