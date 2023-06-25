@@ -3,36 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - Program that calculate arguments passed
- * @ac: Number of arguments passed
- * @argv: Pointers to the strings passed
- *
- * Return: Result of calculation
- * 98 if number or arguments is wrong
- * 99 if operator is wrong
- * 100 if division or mode has 0 as divisor
- */
-int main(int ac, char *argv[])
+  * main - function that calls functions
+  * @argc: number of arguments passed when compiling
+  * @argv: argument vectors
+  *
+  * Return: (0) Success
+  */
+int main(int argc, char *argv[])
 {
-	int result;
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
-	int (*ptr)(int, int);
+	int (*oprt)(int, int);
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	ptr = get_op_func(argv[2]);
+	oprt = get_op_func(argv[2]);
 
-	if (!ptr)
+	if (!oprt)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	result = ptr(a, b);
-	printf("%d\n", result);
+
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
