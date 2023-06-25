@@ -3,17 +3,21 @@
 #include <stdio.h>
 
 /**
-  * main - function that calls functions
-  * @argc: number of arguments passed when compiling
-  * @argv: argument vectors
-  *
-  * Return: (0) Success
-  */
-int main(int argc, char *argv[])
+ * main - Program that calculate arguments passed
+ * @ac: Number of arguments passed
+ * @argv: Pointers to the strings passed
+ *
+ * Return: Result of calculation
+ * 98 if number or arguments is wrong
+ * 99 if operator is wrong
+ * 100 if division or mode has 0 as divisor
+ */
+int main(int ac, char *argv[])
 {
+	int result;
 	int (*ptr)(int, int);
 
-	if (argc != 4)
+	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -26,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-
-	printf("%d\n", ptr(atoi(argv[1]), atoi(argv[3])));
+	result = ptr(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", result);
 	return (0);
 }
