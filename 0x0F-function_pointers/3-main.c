@@ -18,7 +18,7 @@ int main(int ac, char *argv[])
 	int a = atoi(argv[1]);
 	int b = atoi(argv[3]);
 	int (*ptr)(int, int);
-		
+
 	if (ac != 4)
 	{
 		printf("Error\n");
