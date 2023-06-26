@@ -31,7 +31,6 @@ void print_all(const char * const format, ...)
 				printf("%s", sep);
 				id[t_indx].func(ap);
 				sep = ", ";
-				break;
 			}
 			t_indx++;
 		}
