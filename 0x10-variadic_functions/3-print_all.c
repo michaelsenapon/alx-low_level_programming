@@ -63,5 +63,6 @@ void f_str(va_list ap)
 	char *str = va_arg(ap, char *);
 	if (str == NULL)
 		printf("(nil)");
-	printf("%s", str);
+	else
+		printf("%s", str);
 }
