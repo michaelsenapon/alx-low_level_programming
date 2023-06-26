@@ -2,8 +2,9 @@
 #define _VARIADIC_FUNCTIONS_H_
 
 #include <stdarg.h>
-#include <stdlib.h>
+#include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct pf - Structure pf
