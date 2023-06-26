@@ -1,26 +1,23 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct dog - a structure type with elements defined
- * @name: pointer to element that hold dog's name
- * @age: element that holds age
- * @owner: pointer to element that holds owner's name
+ * struct dog - Structure name tag
+ * @name: Name of dog
+ * @age: Age of dog
+ * @owner: Name of owner
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-
+} dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-
-typedef struct dog dog_t;
-
 dog_t *new_dog(char *name, float age, char *owner);
-
+int _strlen(char *);
+void _strcpy(char *, char *);
 void free_dog(dog_t *d);
 
-#endif /* DOG_H */
+#endif /* _DOG_H_ */
