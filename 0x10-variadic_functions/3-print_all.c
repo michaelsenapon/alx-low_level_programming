@@ -37,6 +37,7 @@ void print_all(const char * const format, ...)
 		f_indx++;
 	}
 	putchar('\n');
+	va_end(ap);
 }
 
 void f_char(va_list ap)
