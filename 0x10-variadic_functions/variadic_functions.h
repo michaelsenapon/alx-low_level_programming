@@ -7,9 +7,9 @@
 #include <stdlib.h>
 
 /**
- * struct pf - Structure pf
- * @c: Format identifier
- * @f: The function associated
+ * struct p_f - Structure pf
+ * @ch: Format identifier
+ * @func: The function associated
  */
 typedef struct p_f
 {
