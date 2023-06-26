@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 
 void f_char(va_list ap)
 {
-	char c = va_arg(ap, int);
+	int c = va_arg(ap, int);
 	printf("%c", c);
 }
 
