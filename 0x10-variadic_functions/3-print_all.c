@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	
 	f_indx = 0;
-	while (format[f_indx] && format != NULL)
+	while (format[f_indx] != '\0' && format != NULL)
 	{
 		t_indx = 0;
 		while (t_indx < 4)
