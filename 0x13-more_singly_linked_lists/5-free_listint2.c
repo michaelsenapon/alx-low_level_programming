@@ -18,6 +18,5 @@ void free_listint2(listint_t **head)
 		trav = trav->next;
 		free(rm);
 	}
-	trav = NULL;
 	*head = NULL;
 }
