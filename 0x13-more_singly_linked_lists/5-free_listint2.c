@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 	listint_t *rm;
 	listint_t *trav = *head;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return;
 
 	while (trav)
@@ -18,6 +18,5 @@ void free_listint2(listint_t **head)
 		trav = trav->next;
 		free(rm);
 	}
-	free(trav);
 	*head = NULL;
 }
