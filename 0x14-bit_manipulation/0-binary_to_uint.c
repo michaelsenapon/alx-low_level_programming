@@ -20,23 +20,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] < 48 || b[i] > 57)
 			return (0);
-		result = result + ((b[i] - 48) * _pow(2, len));
+		result = result + ((b[i] - 48) * (1 << len));
 		i++;
 		len--;
 	}
 	return (result);
-}
-
-/**
- * _pow - Recursive function that compute power
- * @a: The base number
- * @b: The power number
- *
- * Return: The result of computing power
- */
-int _pow(int a, int b)
-{
-	if (b == 0)
-		return (1);
-	return (a * _pow(a, b - 1));
 }
