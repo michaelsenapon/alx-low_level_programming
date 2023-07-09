@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int len = 32;
+	int len = 64;
 	int bit;
 	int ithbit;
 	
