@@ -10,10 +10,10 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int temp_n;
-	int bit;
+	int bit, res;
 
 	temp_n = n;
 	bit = temp_n >> index;
-
-	return (bit & 1);
+	res = bit & 1;
+	return (res);
 }
