@@ -29,8 +29,8 @@ int main(int argc, char **argv)
 void copy_file_to_file(const char *file_from, const char *file_to)
 {
 	int fd1, fd2, num_read;
-	
-	char *buffer [1024];
+
+	char *buffer[1024];
 
 	/* open filefrom */
 	fd1 = open(file_from, O_RDONLY);
@@ -42,7 +42,7 @@ void copy_file_to_file(const char *file_from, const char *file_to)
 	}
 
 	fd2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	
+
 	while ((num_read = read(fd1, buffer, 1024)) > 0)
 	{
 		if (write(fd2, buffer, num_read) != num_read || fd2 == -1)
@@ -51,8 +51,6 @@ void copy_file_to_file(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	}
-		
-
 	if (num_read == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
@@ -70,4 +68,4 @@ void copy_file_to_file(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
-}	
+}
